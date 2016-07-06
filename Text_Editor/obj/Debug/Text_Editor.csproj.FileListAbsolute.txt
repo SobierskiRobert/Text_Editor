@@ -1,0 +1,14 @@
+D:\RSPROJEKT\Text_Editor\Text_Editor\bin\Debug\Text_Editor.exe.config
+D:\RSPROJEKT\Text_Editor\Text_Editor\bin\Debug\Text_Editor.exe
+D:\RSPROJEKT\Text_Editor\Text_Editor\bin\Debug\Text_Editor.pdb
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\Text_Editor.csprojResolveAssemblyReference.cache
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\MainWindow.g.cs
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\App.g.cs
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\Text_Editor_MarkupCompile.cache
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\Text_Editor_MarkupCompile.lref
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\MainWindow.baml
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\Text_Editor.g.resources
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\Text_Editor.Properties.Resources.resources
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\Text_Editor.csproj.GenerateResource.Cache
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\Text_Editor.exe
+D:\RSPROJEKT\Text_Editor\Text_Editor\obj\Debug\Text_Editor.pdb
