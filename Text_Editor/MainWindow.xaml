@@ -12,20 +12,20 @@
     </Window.CommandBindings>
     <DockPanel>
         <ToolBar DockPanel.Dock="Top">
-            <Button Command="ApplicationCommands.Open">
+            <Button Command="ApplicationCommands.Open" ToolTip="Open File">
                 <Image Source="/Text_Editor;component/Images/open.png" Width="16" Height="16" />
             </Button>
-            <Button Command="ApplicationCommands.Save">
+            <Button Command="ApplicationCommands.Save" ToolTip="Save File">
                 <Image Source="/Text_Editor;component/Images/save.png" Width="16" Height="16" />
             </Button>
             <Separator />
-            <ToggleButton Command="EditingCommands.ToggleBold" Name="btnBold">
+            <ToggleButton Command="EditingCommands.ToggleBold" Name="btnBold" ToolTip="Bold">
                 <Image Source="/Text_Editor;component/Images/bold.png" Width="16" Height="16" />
             </ToggleButton>
-            <ToggleButton Command="EditingCommands.ToggleItalic" Name="btnItalic">
+            <ToggleButton Command="EditingCommands.ToggleItalic" Name="btnItalic" ToolTip="Italic">
                 <Image Source="/Text_Editor;component/Images/italic.png" Width="16" Height="16" />
             </ToggleButton>
-            <ToggleButton Command="EditingCommands.ToggleUnderline" Name="btnUnderline">
+            <ToggleButton Command="EditingCommands.ToggleUnderline" Name="btnUnderline" ToolTip="Underline">
                 <Image Source="/Text_Editor;component/Images/underline.png" Width="16" Height="16" />
             </ToggleButton>
             <Separator />
