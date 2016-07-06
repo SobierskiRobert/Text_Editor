@@ -18,6 +18,9 @@ namespace Text_Editor
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// The class constructor.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -25,6 +28,9 @@ namespace Text_Editor
             cmbFontSize.ItemsSource = new List<double>() { 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72 };
         }
 
+        /// <summary>
+        /// Items of Toolbar changed.
+        /// </summary>
         private void rtbEditor_SelectionChanged(object sender, RoutedEventArgs e)
         {
             object temp = rtbEditor.Selection.GetPropertyValue(Inline.FontWeightProperty);
@@ -40,6 +46,9 @@ namespace Text_Editor
             cmbFontSize.Text = temp.ToString();
         }
 
+        /// <summary>
+        /// Open File Dialog.
+        /// </summary>
         private void Open_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
@@ -52,6 +61,9 @@ namespace Text_Editor
             }
         }
 
+        /// <summary>
+        /// Save File Dialog.
+        /// </summary>
         private void Save_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
@@ -65,12 +77,18 @@ namespace Text_Editor
 
         }
 
+        /// <summary>
+        /// Change font family.
+        /// </summary>
         private void cmbFontFamily_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (cmbFontFamily.SelectedItem != null)
                 rtbEditor.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
         }
 
+        /// <summary>
+        /// Change font size.
+        /// </summary>
         private void cmbFontSize_TextChanged(object sender, TextChangedEventArgs e)
         {
             rtbEditor.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
