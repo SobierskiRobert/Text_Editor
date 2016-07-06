@@ -19,8 +19,20 @@
                 <Image Source="/Text_Editor;component/Images/save.png" Width="16" Height="16" />
             </Button>
             <Separator />
+            <ToggleButton Command="EditingCommands.ToggleBold" Name="btnBold">
+                <Image Source="/Text_Editor;component/Images/bold.png" Width="16" Height="16" />
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleItalic" Name="btnItalic">
+                <Image Source="/Text_Editor;component/Images/italic.png" Width="16" Height="16" />
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleUnderline" Name="btnUnderline">
+                <Image Source="/Text_Editor;component/Images/underline.png" Width="16" Height="16" />
+            </ToggleButton>
+            <Separator />
+            <ComboBox Name="cmbFontFamily" Width="150" SelectionChanged="cmbFontFamily_SelectionChanged" />
+            <ComboBox Name="cmbFontSize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cmbFontSize_TextChanged" />
         </ToolBar>
-        <RichTextBox Name="rtbEditor">
+        <RichTextBox Name="rtbEditor" SelectionChanged="rtbEditor_SelectionChanged">
         </RichTextBox>
     </DockPanel>
 </Window>
