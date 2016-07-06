@@ -33,6 +33,25 @@
             <ComboBox Name="cmbFontSize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cmbFontSize_TextChanged" />
         </ToolBar>
         <RichTextBox Name="rtbEditor" SelectionChanged="rtbEditor_SelectionChanged">
+            <RichTextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Command="Cut">
+                        <MenuItem.Icon>
+                            <Image Source="/Text_Editor;component/Images/cut.png" Width="16" Height="16" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Command="Copy">
+                        <MenuItem.Icon>
+                            <Image Source="/Text_Editor;component/Images/copy.png" Width="16" Height="16" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Command="Paste">
+                        <MenuItem.Icon>
+                            <Image Source="/Text_Editor;component/Images/paste.png" Width="16" Height="16" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </RichTextBox.ContextMenu>
         </RichTextBox>
     </DockPanel>
 </Window>
